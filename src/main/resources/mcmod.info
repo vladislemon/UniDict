@@ -1,10 +1,10 @@
 [
 {
-  "modid": "UniDict",
-  "name": "UniDict",
+  "modid": "${modId}",
+  "name": "${modName}",
   "description": "a mod about unifying all the things.",
-  "version": "2.9.2",
-  "mcversion": "${mcversion}",
+  "version": "${modVersion}",
+  "mcversion": "${minecraftVersion}",
   "url": "http://minecraft.curseforge.com/projects/unidict",
   "updateUrl": "",
   "authorList": ["WanionCane"],

@@ -115,7 +115,7 @@ public final class UniDict
                 if (mayBeAModule.getSuperclass().isAssignableFrom(AbstractModule.class))
                     moduleHandler.addModule((AbstractModule) mayBeAModule.newInstance());
             } catch (ClassNotFoundException | IllegalAccessException | InstantiationException e) {
-                logger.error("Cannot load ", asmData.getClassName(), e);
+                logger.error("Cannot load {}", asmData.getClassName(), e);
             }
         });
         return moduleHandler;

@@ -12,9 +12,9 @@ import static java.io.File.separatorChar;
 
 public final class Reference
 {
-    public static final String MOD_ID = "UniDict";
-    public static final String MOD_NAME = MOD_ID;
-    public static final String MOD_VERSION = "1.7.10-2.9.2";
+    public static final String MOD_ID = "GRADLETOKEN_MODID";
+    public static final String MOD_NAME = "GRADLETOKEN_MODNAME";
+    public static final String MOD_VERSION = "GRADLETOKEN_VERSION";
     public static final char SLASH = separatorChar;
     public static final String MC_VERSION = "[1.7.10]";
 
