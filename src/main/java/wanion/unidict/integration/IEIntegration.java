@@ -107,7 +107,9 @@ final class IEIntegration extends AbstractIntegrationThread
                 continue;
             final int id = MetaItem.getCumulative(output, metalPressRecipe.mold.stack);
             if (!uniques.contains(id)) {
-                correctRecipes.put(metalPressRecipe.mold, new MetalPressRecipe(output, metalPressRecipe.input, metalPressRecipe.mold.stack, metalPressRecipe.energy));
+                MetalPressRecipe correctRecipe = new MetalPressRecipe(output, metalPressRecipe.input, metalPressRecipe.mold.stack, metalPressRecipe.energy);
+                correctRecipe.setInputSize(metalPressRecipe.inputSize);
+                correctRecipes.put(metalPressRecipe.mold, correctRecipe);
                 uniques.add(id);
             }
             metalPressRecipesIterator.remove();
